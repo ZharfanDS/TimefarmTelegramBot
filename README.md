@@ -1,5 +1,7 @@
 BOT TELEGRAM : [Time Farm Telegram](https://t.me/TimeFarmCryptoBot?start=LnDO5pMtlVk6eMVL)
 
+THE MAIN SOURCE IS: https://github.com/Shyzg/timefarm , but i edit some code.
+
 THIS CODE IS RUNNING IN PYTHON VERSION 3.10+
 
 !!!WARNING!!!
