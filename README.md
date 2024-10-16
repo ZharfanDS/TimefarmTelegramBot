@@ -10,7 +10,8 @@ ALSO, SOME MISSION GONNA BE ERROR LIKE THIS :
 BUT ANOTHER MISSION WILL BE COMPLETED~
 
 TO RUN THIS CODE,
-1. CREATE SESSION FIRST WITH python3 create.py or python create.py, input your API ID & API HASH, and after that input your phone number to make a session (the session file name is going to be default.session)
-2. AFTER CREATING SESSION, RUN THE BOT WITH python3 app.py or python app.py
+1. CREATE SESSION FIRST WITH python3 create.py or python create.py, INPUT YOUR API ID & API HASH, AND AFTER THAT INPUT YOUR PHONE NUMBER TO MAKE A SESSION (THE SESSION FILE NAME IS GOING TO BE default.session)
+2. EDIT THE config.json, INPUT YOUR API ID & API HASH THERE. (IMPORTANT, BECAUSE IF YOU DIDN'T DO THIS, THERE COULD BE AN ERROR)
+3. AFTER CREATING SESSION, RUN THE BOT WITH python3 app.py OR python app.py
 
 ENJOY~
