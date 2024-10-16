@@ -1,8 +1,9 @@
 import os
+import json
 import asyncio
 from telethon import TelegramClient
 
-async def create_session(api_id, api_hash, session_name='default'):
+async def create_session(api_id, api_hash, session_name):
     """Membuat file session .session menggunakan API ID dan API HASH"""
     # Buat instance TelegramClient
     client = TelegramClient(f'sessions/{session_name}', api_id, api_hash)
@@ -14,9 +15,14 @@ async def create_session(api_id, api_hash, session_name='default'):
         print(f"Session '{session_name}.session' berhasil dibuat!")
 
 async def main():
-    # API ID dan API HASH didapatkan dari Telegram Developer
-    api_id = int(input("Masukkan API ID: "))  # Misal: 123456
-    api_hash = input("Masukkan API HASH: ")  # Misal: 'abc123def456ghi789'
+    # Membaca API ID dan API HASH dari config.json
+    with open('config.json', 'r') as config_file:
+        config_data = json.load(config_file)
+        api_id = config_data.get('api_id')
+        api_hash = config_data.get('api_hash')
+
+    # Menanyakan session_name kepada user
+    session_name = input("Masukkan nama session: ")  # Tanya session_name ke user
 
     # Path untuk folder sesi
     session_folder = 'sessions/'
@@ -29,7 +35,7 @@ async def main():
     sessions = [file for file in os.listdir(session_folder) if file.endswith('.session')]
     if not sessions:
         print("Tidak ada file .session ditemukan. Membuat file session baru...")
-        await create_session(api_id, api_hash)
+        await create_session(api_id, api_hash, session_name)
     else:
         print(f"File .session sudah ditemukan: {sessions}")
 
