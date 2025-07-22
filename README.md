@@ -1,3 +1,4 @@
+**THE CODE IS NOT WORKING ANYMORE**
 ~~BOT TELEGRAM : [Time Farm Telegram](https://t.me/TimeFarmCryptoBot?start=9sJZRBahv0TlZKQu)~~
 
 ~~THE MAIN SOURCE IS: https://github.com/Shyzg/timefarm , but i edit some code.~~
@@ -18,5 +19,3 @@ SO, DO NOT PANIC IF YOUR POINT DECREASES.~~
 ~~2. INSTALL THE REQUIREMENTS, USE pip3 install -r requirements.txt~~
 ~~3. CREATE SESSION WITH python3 create.py OR python create.py, AFTER THAT INPUT YOUR SESSION NAME AND PHONE NUMBER TO MAKE A SESSION. (ONLY 1 ACCOUNT, CANT MULTIPLE ACCOUNT)~~
 ~~4. AFTER CREATING SESSION, RUN THE BOT WITH python3 app.py OR python app.py~~
-
-THE CODE IS NOT WORKING ANYMORE
